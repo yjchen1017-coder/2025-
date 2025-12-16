@@ -44,6 +44,7 @@
         }
         .hero-pattern {
             background-color: #2C3E50;
+            /* 這裡仍使用網路圖片當背景，若要換本地圖請上傳 bg.jpg 並改為 url('images/bg.jpg') */
             background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -182,7 +183,11 @@
                     
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 group">
                         <div class="relative h-56 overflow-hidden">
-                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/345591942.jpg?k=23a6c117d60551061f22e77b60570b54f4949514e8c67919313045862359487c&o=&hp=1" alt="Centurion Hakone Bettei" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <!-- 請確認您已上傳 images/hotel.jpg -->
+                            <img src="images/hotel.jpg" 
+                                 onerror="this.src='https://placehold.co/800x600?text=Please+Upload+images/hotel.jpg';"
+                                 alt="Centurion Hakone Bettei" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
                                 <h3 class="text-xl font-serif font-bold text-white">Centurion Hakone Bettei</h3>
                                 <p class="text-white/80 text-sm">仙石原溫泉・客房半露天風呂</p>
@@ -228,7 +233,10 @@
                     <span class="text-sm font-bold text-gray-400 block mb-1">10:00</span>
                     <div class="bg-white rounded-xl shadow p-4 border border-gray-100">
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <img src="https://images.unsplash.com/photo-1549643276-fbc2bd525904?q=80&w=400&auto=format&fit=crop" alt="箱根玻璃之森" class="w-full sm:w-1/3 h-32 object-cover rounded-lg">
+                            <!-- 請確認您已上傳 images/glass-museum.jpg -->
+                            <img src="images/glass-museum.jpg" 
+                                 onerror="this.src='https://placehold.co/400x300?text=Please+Upload+images/glass-museum.jpg';"
+                                 alt="箱根玻璃之森" class="w-full sm:w-1/3 h-32 object-cover rounded-lg">
                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-gray-800">箱根玻璃之森美術館</h3>
                                 <p class="text-sm text-gray-600 mb-3">距離飯店僅5分鐘。庭園平坦好走，有閃亮的玻璃樹，室內有暖氣。適合長輩慢遊。</p>
@@ -245,7 +253,10 @@
                     <div class="absolute left-4 top-2 w-4 h-4 bg-onsen-gold rounded-full border-4 border-soft-bg z-10"></div>
                     <span class="text-sm font-bold text-onsen-gold block mb-1">14:00</span>
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1576675466969-38ee047b663a?q=80&w=800&auto=format&fit=crop" alt="蘆之湖海賊船" class="w-full h-40 object-cover">
+                        <!-- 請確認您已上傳 images/lake-ashi.jpg -->
+                        <img src="images/lake-ashi.jpg" 
+                             onerror="this.src='https://placehold.co/800x400?text=Please+Upload+images/lake-ashi.jpg';"
+                             alt="蘆之湖海賊船" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-gray-800 flex justify-between">
                                 蘆之湖海賊船 / 大涌谷
@@ -343,7 +354,10 @@
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
                         <div class="flex flex-col sm:flex-row">
                             <div class="sm:w-1/3 h-48 sm:h-auto relative">
-                                <img src="https://images.unsplash.com/photo-1583921355416-5bc515d9a997?q=80&w=600&auto=format&fit=crop" alt="淺草雷門" class="absolute inset-0 w-full h-full object-cover">
+                                <!-- 請確認您已上傳 images/asakusa.jpg -->
+                                <img src="images/asakusa.jpg" 
+                                     onerror="this.src='https://placehold.co/600x400?text=Please+Upload+images/asakusa.jpg';"
+                                     alt="淺草雷門" class="absolute inset-0 w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:w-2/3">
                                 <h3 class="text-lg font-bold text-gray-800">淺草寺 & 人力車體驗</h3>
@@ -371,7 +385,7 @@
             </div>
         </section>
 
-        <!-- Day 5 (Fixed Missing Section) -->
+        <!-- Day 5 -->
         <section id="day5" class="mb-16 scroll-mt-24">
             <div class="flex items-center mb-8">
                 <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
